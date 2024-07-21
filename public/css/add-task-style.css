@@ -1,0 +1,128 @@
+html, body {
+    touch-action: pan-x pan-y;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.notch-bar {
+    height: env(safe-area-inset-top);
+    background-color: #85023e;
+}
+
+/* 画面上部の余白設定 */
+.space {
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #85023e;
+}
+
+p {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #85023e;
+}
+
+/* 課題登録欄の設定 */
+#task-form {
+    margin: 20px;
+}
+
+input {
+    font-size: 30px;
+    font-family: "Noto Sans JP", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #85023e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* 日付登録 */
+/* .day-limit {
+    margin-top: 20px;
+}
+
+.time-limit {
+    margin-top: 20px;
+} */
+
+/* 優先順位レーティング */
+
+/* .rating {
+    margin-top: 20px;
+} */
+
+#priority {
+    font-size: 30px;
+    font-family: "Noto Sans JP", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #85023e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* 追加ボタン */
+.add-btn-div {
+    text-align: right;
+}
+
+#add-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #85023e;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: #85023e;
+    border-radius: 5px;
+    
+}
+
+/* 画面下部の余白部分 */
+.foot-space {
+    height: 300px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-color: #85023e;
+}
+
+.footer-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-item img {
+    height: 70px;
+}
+
+.footer-logo {
+    height: 90px;
+}

@@ -1,0 +1,134 @@
+html, body {
+    touch-action: pan-x pan-y;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.notch-bar {
+    height: env(safe-area-inset-top);
+    background-color: #85023e;
+}
+
+/* 画面上部の余白設定 */
+.space {
+    padding-top: 20px;
+    margin: 5px;
+}
+
+/* メニューバー設定 */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-bar .menu-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border: solid;
+    border-radius: 10px;
+    border-color: #85023e;
+}
+
+.menu-item a {
+    font-size: 19px;
+    color: #85023e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #85023e;
+    font-weight: bold;
+}
+
+.no-tasks p {
+    text-align: center;
+    color: #85023e;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+li p {
+    margin: 0;
+    font-size: 23px;
+    color: #85023e;
+    font-weight: bold;
+}
+
+li {
+    margin: 10px 0;
+    padding: 0.5em 0.5em;
+    color: #85023e;
+    font-weight: bold;
+    /* 背景の装飾 */
+    background-color: #edfcff;
+    list-style-type: none!important;
+    border-left: solid 6px #2d8fdd;
+}
+
+.no-tasks {
+    margin: 20px;
+}
+
+.no-tasks img {
+    width: 100%;
+}
+
+li button {
+    margin-left: 2em;
+    padding:0.2em 0.5em;
+}
+
+/* 画面下部の余白部分 */
+.foot-space {
+    height: 500px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-color: #85023e;
+}
+
+.footer-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-item img {
+    height: 70px;
+}
+
+.footer-logo {
+    height: 90px;
+}

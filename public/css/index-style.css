@@ -1,0 +1,159 @@
+html, body {
+    touch-action: pan-x pan-y;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.notch-bar {
+    height: env(safe-area-inset-top);
+    background-color: #85023e;
+}
+
+/* index書式設定 */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end; /* 右揃え */
+    padding: 30px 10px; /* 任意のパディング */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+}
+
+.nav-guide-btn {
+    margin-left: 15px; /* ボタン間の間隔を調整 */
+}
+
+.guide-mypage, .guide-login, .guide-reg {
+    text-decoration: none;
+    color: #85023e; /* 任意の文字色 */
+    margin: 10px 0; /* 任意のパディング */
+    padding: 5px 10px;
+}
+
+.guide-reg {
+    border: 2px solid #85023e; /* 任意の枠線の色 */
+    border-radius: 5px; /* 角丸の半径 */
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.eye-catch {
+    display: flex;
+    font-size: 15px;
+    color: #85023e;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    /* background-image: linear-gradient(to bottom, #8080dd, #00ccff); */
+}
+
+.eye-catch img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+/* top-img設定 */
+.main-content {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.main-content.fade-in {
+    opacity: 1;
+}
+
+.main-content p {
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #85023e;
+}
+
+.top-img img {
+    width: 100%;
+}
+
+
+
+
+
+/* メニューバー設定 */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-bar .menu-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border: solid;
+    border-radius: 10px;
+    border-color: #85023e;
+}
+
+.menu-item a {
+    font-size: 19px;
+    color: #85023e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* 要注意課題リスト */
+.due-assignment-lis h1{
+    text-align: center;
+    color: #85023e;
+}
+
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-color: #85023e;
+}
+
+.footer-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-item img {
+    height: 70px;
+}
+
+.footer-logo {
+    height: 90px;
+}

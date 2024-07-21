@@ -1,0 +1,107 @@
+html, body {
+    touch-action: pan-x pan-y;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+    /* 以下gptより引用 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notch-bar {
+    height: env(safe-area-inset-top);
+    background-color: #85023e;
+}
+
+/* 画面上部の余白設定 */
+.space {
+    padding-top: 50px;
+}
+
+/* カレンダー設定 */
+h1 {
+    text-align: center;
+    color: #85023e;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #85023e;
+    font-size: 20px;
+}
+
+.checkbox-grid {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    width: 20px; /* 横幅 */
+    height: 20px; /* 高さ */
+    transform: scale(1.5); /* サイズを1.5倍に拡大 */
+    margin: 5px; /* 余白 */
+}
+
+.save-btn-div {
+    text-align: center;
+}
+
+#save-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* 画面下部の余白部分 */
+.foot-space {
+    height: 300px;
+}
+
+/* フッター設定 */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-color: #85023e;
+}
+
+.footer-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-item img {
+    height: 70px;
+}
+
+.footer-logo {
+    height: 90px;
+}

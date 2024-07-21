@@ -1,0 +1,92 @@
+html, body {
+    touch-action: pan-x pan-y;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.notch-bar {
+    height: env(safe-area-inset-top);
+    background-color: #85023e;
+}
+
+/* 画面上部の余白設定 */
+.space {
+    padding-top: 20px;
+    margin: 5px;
+}
+
+#logout-form {
+    text-align: center;
+    padding: 30px;
+}
+
+#logout-form button {
+    font-size: 20px;
+    color: #85023e;
+    background-color: #faf1f4;
+    border-width: 3px;
+    border-color: #85023e;
+    border-radius: 10px;
+}
+
+/* ジ〇ージ語録部分設定 */
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.message img {
+    width: 90%;
+}
+
+.home-back {
+    margin-left: 20px;
+}
+
+a img {
+    height: 50px;
+}
+
+
+/* 画面下部の余白部分 */
+.foot-space {
+    height: 300px;
+}
+
+/* 画面下部タブバー */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-color: #85023e;
+}
+
+.footer-item {
+    flex: 1 1 auto;
+    max-width: calc(100% / 3 - 10px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-item img {
+    height: 70px;
+}
+
+.footer-logo {
+    height: 90px;
+}

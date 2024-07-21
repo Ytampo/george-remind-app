@@ -8,7 +8,7 @@
     <!-- デバイス表示領域の設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- 他ファイルリンク -->
-    <link rel="stylesheet" href="{{ asset('css/dashboard-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/my-tasks-style.css') }}">
     <link rel="manifest" href="{{ asset('js/manifest.json') }}">
     <script src="{{ asset('js/no-scroll.js') }}" defer></script>
     <!-- フォント読み込み -->
@@ -20,9 +20,6 @@
 <body>
     <div class="notch-bar"></div> <!-- iPhoneノッチ部分 -->
     <div class="space">
-        <div class="setting" style="float: right;">
-            <a href="{{ route('setting') }}"><img class="setting-logo" src="{{ asset('img/setting.svg') }}"></a>
-        </div>
     </div> <!-- 画面上部の余白 -->
     <div class="menu-bar">
         <div class="menu-item"><a class="menu-btn" href="{{ route('add-task') }}">課題<br>登録</a></div>
@@ -30,13 +27,35 @@
         <div class="menu-item"><a class="menu-btn" href="{{ route('my-tasks') }}">課題<br>リスト</a></div>
     </div>
     <div class="content">
-        <img src="{{ asset('img/straight-face-man.jpg') }}" alt="">
-        ここにジョージを表示
+        <h1>課題一覧</h1>
+        @if ($tasks->isEmpty())
+            <div class="no-tasks">
+                <img src="{{ asset('img/straight-face-man.jpg') }}" alt="">
+                <p>課題がありません</p>
+                <p>「課題登録」から追加しましょう！</p>
+            </div>
+        @else
+            <ul>
+                @foreach ($tasks as $task)
+                    <li>
+                        <p>{{ $task->task_name }}</p>
+                        {{ $task->date_limit }} {{ $task->time_limit }} 優先度：{{ $task->priority }}
+                        <!-- 削除ボタン -->
+                        <form action="{{ route('tasks.destroy', $task->id) }}" method="POST" style="display:inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" onclick="return confirm('本当にこの課題を削除しますか？')">削除</button>
+                        </form>
+                    </li>
+                @endforeach
+            </ul>
+        @endif
     </div>
     <div class="foot-space"></div>
     <footer> <!-- 画面下部タブバー -->
         <div class="footer-item">
-            <a href="{{ route('add-task') }}"><img class="footer-logo" src="{{ asset('img/reg-assignment-logo.png') }}"></a>
+            <a href="{{ route('add-task') }}"><img class="footer-logo"
+                    src="{{ asset('img/reg-assignment-logo.png') }}"></a>
         </div>
         <div class="footer-item">
             <a href="{{ route('dashboard') }}"><img class="footer-logo" src="{{ asset('img/home-logo.png') }}"></a>
