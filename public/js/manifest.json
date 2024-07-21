@@ -1,0 +1,34 @@
+{
+    "name": "単位危機管理",
+    "categories": ["education", "utilities", "social"],
+    "short_name": "単位危機管理",
+    "description": "課題を全力でリマインド",
+    "icons": [
+        {
+            "src": "img/logo-fire-512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo-fire-128.jpg",
+            "sizes": "128x128",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo-fire-48.jpg",
+            "sizes": "48x48",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo-fire-16.jpg",
+            "sizes": "16x16",
+            "type": "image/jpg"
+        }
+    ],
+    "start_url": "https://awsよりURL拝借/dashboard",
+    "scope": "https://awsよりURL拝借/",
+    "display": "standalone",
+    "theme_color": "#85023e",
+    "orientation": "portrait-primary",
+    "background_color": "#ffffff"
+}
