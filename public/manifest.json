@@ -1,5 +1,5 @@
 {
-    "name": "単位危機管理",
+    "name": "単位危機管理アプリ",
     "categories": ["education", "utilities", "social"],
     "short_name": "単位危機管理",
     "description": "課題を全力でリマインド",
@@ -15,6 +15,11 @@
             "type": "image/jpg"
         },
         {
+            "src": "img/logo-fire-114.jpg",
+            "sizes": "114x114",
+            "type": "image/jpg"
+        },
+        {
             "src": "img/logo-fire-48.jpg",
             "sizes": "48x48",
             "type": "image/jpg"
@@ -25,8 +30,8 @@
             "type": "image/jpg"
         }
     ],
-    "start_url": "https://awsよりURL拝借/dashboard",
-    "scope": "https://awsよりURL拝借/",
+    "start_url": "https://george-remind-app.gleap.tech/dashboard",
+    "scope": "https://george-remind-app.gleap.tech/",
     "display": "standalone",
     "theme_color": "#85023e",
     "orientation": "portrait-primary",

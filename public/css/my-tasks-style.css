@@ -59,6 +59,7 @@ h1 {
 .no-tasks p {
     text-align: center;
     color: #85023e;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -91,6 +92,7 @@ li {
 
 .no-tasks img {
     width: 100%;
+    filter: grayscale(100%);
 }
 
 li button {
