@@ -78,7 +78,5 @@ Route::delete('/tasks/{id}', [TaskController::class, 'destroy'])->name('tasks.de
 
 require __DIR__.'/auth.php';
 
-Route::get('/appimg', [ImageController::class, 'index']);
-
 Auth::routes();
 
