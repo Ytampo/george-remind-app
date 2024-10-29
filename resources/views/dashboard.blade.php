@@ -17,6 +17,6 @@
 </div>
 <div class="content">
     <img src="{{ asset('img/straight-face-man.jpg') }}" alt="">
-    課題できないやつ、弱いって。厳しいって。
+    課題できないやつ、弱いって。厳しいって。a
 </div>
 @endsection
