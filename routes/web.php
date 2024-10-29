@@ -6,6 +6,8 @@ use App\Http\Controllers\TaskController;
 // 以下のuseはmiddlewareエラー回避のため追記したもの
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+// アプリimgを表示するために使用
+use App\Http\Controllers\ImageController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -75,6 +77,8 @@ Route::post('/tasks', [TaskController::class, 'store'])->middleware('auth');
 Route::delete('/tasks/{id}', [TaskController::class, 'destroy'])->name('tasks.destroy');
 
 require __DIR__.'/auth.php';
+
+Route::get('/appimg', [ImageController::class, 'index']);
 
 Auth::routes();
 
