@@ -44,9 +44,9 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-
 /* ボタンのスタイル */
 button {
+    display: flex;
     background-color: #85023e; /* ボタンの背景色 */
     color: #fff; /* テキスト色 */
     border: none; /* ボーダーなし */
@@ -54,7 +54,13 @@ button {
     padding: 10px 15px; /* 内側の余白 */
     cursor: pointer; /* カーソルをポインターに */
     font-size: 16px; /* フォントサイズ */
+    margin-top: 10px;
 }
+
+#forgot-password {
+    padding-top: 10px;
+}
+
 
 button:hover {
     background-color: #6f021f; /* ホバー時の背景色 */
