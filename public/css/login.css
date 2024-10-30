@@ -6,18 +6,6 @@ body {
     /* #login-containerの上下中央揃え */
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
-    height: 100vh; /* ビューポートの高さを100%に */
-}
-
-.login-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 30%;
 }
 
 /* ログインフォームのスタイル */
@@ -25,9 +13,20 @@ img {
     background-color: #fff; /* フォームの背景色 */
     border: 2px solid #85023e; /* フォームのボーダー */
     border-radius: 8px; /* 角を丸める */
-    padding: 20px; /* 内側の余白 */
+    padding: 7%; /* 内側の余白 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつける */
     box-sizing: border-box;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 30%;
 }
 
 /* ラベルのスタイル */
