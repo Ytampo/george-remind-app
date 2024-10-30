@@ -30,7 +30,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://george-remind-app.gleap.tech/",
+    "start_url": "https://george-remind-app.gleap.tech/dashboard",
     "scope": "https://george-remind-app.gleap.tech/",
     "display": "standalone",
     "theme_color": "#85023e",
