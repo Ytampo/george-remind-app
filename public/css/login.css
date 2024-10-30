@@ -3,9 +3,6 @@ body {
     background-color: #f7f7f7; /* 明るい背景色 */
     margin: 0;
     padding: 10px;
-    /* #login-containerの上下中央揃え */
-    display: flex;
-    justify-content: center; /* 水平方向の中央揃え */
 }
 
 /* ログインフォームのスタイル */
@@ -46,6 +43,7 @@ input[type="password"] {
     margin-bottom: 15px; /* 下の余白 */
     box-sizing: border-box;
 }
+
 
 /* ボタンのスタイル */
 button {
