@@ -67,7 +67,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('pushcode_sw.js')
+                navigator.serviceWorker.register('js/pushcode_sw.js')
                     .then(function(registration) {
                         console.log('ServiceWorker registration successful with scope: ', registration.scope);
                     }, function(err) {
