@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" href="{{ asset('img/logo-fire.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logo-fire-512.png') }}">
     <title>単位危機管理</title>
     
     <!-- Fonts -->

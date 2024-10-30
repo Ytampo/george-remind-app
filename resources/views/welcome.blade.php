@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="{{ asset('img/logo-fire.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logo-fire-512.png') }}">
     <title>単位危機管理アプリ</title>
     <!-- デバイス表示領域の設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
