@@ -12,7 +12,8 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+        <script src="{{ asset('resources/js/app.js') }}"></script>
         <link rel="manifest" href="{{ asset('js/manifest.json') }}">
     </head>
     <body class="font-sans text-gray-900 antialiased">
