@@ -1,3 +1,4 @@
+// 3713
 const cacheName = 'v1';
 
 self.addEventListener('install', event => {
@@ -35,5 +36,4 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// 3713
 importScripts('https://www.pushcode.jp/dist/js/pushcode_sw.js');
