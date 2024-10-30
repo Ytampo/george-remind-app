@@ -10,24 +10,24 @@
             "sizes": "512x512"
         },
         {
-            "src": "img/logo-fire-128.jpg",
+            "src": "img/logo-fire-128.png",
             "sizes": "128x128",
-            "type": "image/jpg"
+            "type": "image/png"
         },
         {
-            "src": "img/logo-fire-114.jpg",
+            "src": "img/logo-fire-114.png",
             "sizes": "114x114",
-            "type": "image/jpg"
+            "type": "image/png"
         },
         {
-            "src": "img/logo-fire-48.jpg",
+            "src": "img/logo-fire-48.png",
             "sizes": "48x48",
-            "type": "image/jpg"
+            "type": "image/png"
         },
         {
-            "src": "img/logo-fire-16.jpg",
+            "src": "img/logo-fire-16.png",
             "sizes": "16x16",
-            "type": "image/jpg"
+            "type": "image/png"
         }
     ],
     "start_url": "https://george-remind-app.gleap.tech/",
